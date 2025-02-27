@@ -18,6 +18,13 @@ public class CameraFollow : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        // Check if the player exists
+        if (target == null)
+        {
+            enabled = false;
+            return;
+        }
+        
         // Where the camera should go
         Vector3 targetPosition = target.position - offset;
         transform.position = Vector3.Lerp(transform.position, targetPosition, transitionSpeed * Time.deltaTime);
