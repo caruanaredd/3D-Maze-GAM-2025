@@ -2173,6 +2173,7 @@ MonoBehaviour:
   hero: Redd
   isAlive: 1
   direction: {x: 0, y: 0, z: 0}
+  playerRb: {fileID: 1334130214}
 --- !u!54 &1334130214
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2226,6 +2227,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   points: 5
   respawnPosition: {x: 0, y: 0, z: 0}
+  healthText: {fileID: 632053385}
 --- !u!1 &1653363537
 GameObject:
   m_ObjectHideFlags: 0
