@@ -33,7 +33,8 @@ public class Health : MonoBehaviour
     private void Damage(int value)
     {
         points = points - value;
-        healthText.text = $"<b>Health:</b> {points}";
+        healthText.text = $"<b>Health:</b>" +
+                          $" {points}";
         
         // HW:
         // Move the player to the start
